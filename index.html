@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.com">
+    <title>CRUD</title>
+    
+    <script src="https://kit.fontawesome.com/2f918ad867.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        
+        <div id="logo"><img alt="photo 11" src="https://w7.pngwing.com/pngs/893/48/png-transparent-task-project-management-computer-icons-service-others-miscellaneous-text-logo-thumbnail.png"></div>
+    </header>    
+        <nav>
+            <lu>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nosortros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </lu>
+            <div class="hide">
+                <i class="fa fa-bars" aria-hidden="true"></i> Menu
+            </div>
+        </nav>
+        <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script>
+            $(".hide").on('click',function(){
+                $("li").toggle('fast');
+            })
+        </script>
+
+     
+    
+    <h1 class="page-title">TAREAS.</h1>
+    
+        <div id= "contenido" class="principal">
+            <h2>Nueva tarea</h2>
+                <from id="nueva-tarea" class="contenedor">
+                    
+                    <div class="tarea-div">
+                        <label class="">Nombre tarea:</label>
+                        
+                        <input type="text" id="nameTask" name="tarea" class="form-control" placeholder="Tarea"> 
+                        
+                    </div>
+                    <div id="Newdetaill"class="detalle">
+                        <label class="">Detalle:</label>
+                            <input type="text" id="detalle-tarea" name="detalle" class="form-control" placeholder="Detalle">
+                    </div>
+                    <div id="CreaTarea" class="crea">
+                        <button type="submit" class="btn" onclick="changename(event)">Crear tarea</button>
+                    </div>
+                    
+                </from>
+                <h2 id="administra" class="sub-tittle">Lista tarea</h2>
+                <div class="caja-lista">
+                    
+                    <ul id="tareas-lista" class="lista-tareas"></ul>
+                </div>
+        </div>
+    
+
+    <footer class="footer">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="https://w7.pngwing.com/pngs/893/48/png-transparent-task-project-management-computer-icons-service-others-miscellaneous-text-logo-thumbnail.png" alt="logo-2  ">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h4>CONOCENOS.</h4>
+                <p><b>Direccion:</b></p>
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, adipisci.</p>
+                <h4>LLAMANOS:</h4>
+                <p>000-000-0000</p>
+            </div>
+            <div class="box">
+                <h4>SIGUENOS</h4>
+                <div class="red_social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2022 - Todos los Derechos Reservados</small>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
